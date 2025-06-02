@@ -1,32 +1,47 @@
-### IntelliJ IDEA ###
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-/.idea
-*idea
+# MacOS
+.DS_Store
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Build
+target/
+build/
 
-### VS Code ###
+# Maven
+.mvn/
+!**/src/main/**/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# SQL Backups
+*.sql~
+
+# Node/npm (en caso de tener cosas web en el futuro)
+node_modules/
+
+# VSCode (si también lo usas)
 .vscode/
 
-### Mac OS ###
-.DS_Store
+# Personal folders
+*.swp
+*.swo

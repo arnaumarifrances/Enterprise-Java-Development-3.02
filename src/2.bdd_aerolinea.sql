@@ -1,5 +1,8 @@
--- Tabla de clientes de la aerolínea
-CREATE TABLE Clientes (
+-- Asegurar el uso de la base
+USE Aerolineas;
+
+-- Tabla de clientes
+CREATE TABLE IF NOT EXISTS Clientes (
   id_cliente INT PRIMARY KEY AUTO_INCREMENT,
   nombre VARCHAR(100),
   estatus VARCHAR(20),
@@ -7,14 +10,14 @@ CREATE TABLE Clientes (
 );
 
 -- Tabla de aviones
-CREATE TABLE Aviones (
+CREATE TABLE IF NOT EXISTS Aviones (
   id_avion INT PRIMARY KEY AUTO_INCREMENT,
   modelo VARCHAR(100),
   asientos_totales INT
 );
 
 -- Tabla de vuelos
-CREATE TABLE Vuelos (
+CREATE TABLE IF NOT EXISTS Vuelos (
   id_vuelo INT PRIMARY KEY AUTO_INCREMENT,
   numero_vuelo VARCHAR(10),
   id_avion INT,
@@ -23,7 +26,7 @@ CREATE TABLE Vuelos (
 );
 
 -- Tabla de reservas
-CREATE TABLE Reservas (
+CREATE TABLE IF NOT EXISTS Reservas (
   id_reserva INT PRIMARY KEY AUTO_INCREMENT,
   id_cliente INT,
   id_vuelo INT,

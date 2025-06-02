@@ -27,7 +27,7 @@ Normaliza la siguiente base de datos de aerolínea y escribe los scripts **DDL**
 | Alaina Sepulvida   | None               | DL122            | Airbus A330   | 236               | 4370                 | 6008                       |
 | ...                | ...                | ...              | ...           | ...               | ...                  | ...                        |
 
-*(Consulta el enunciado completo para ver todos los registros)*
+*(Consultar el enunciado completo en Ironhack para ver todos los registros)*
 
 ---
 

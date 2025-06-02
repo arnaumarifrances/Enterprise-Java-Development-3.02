@@ -1,11 +1,15 @@
+-- Selección de base de datos
+CREATE DATABASE IF NOT EXISTS Aerolineas;
+USE Aerolineas;
+
 -- Tabla de autores del blog
-CREATE TABLE Autores (
+CREATE TABLE IF NOT EXISTS Autores (
   id_autor INT PRIMARY KEY AUTO_INCREMENT,
   nombre VARCHAR(100) NOT NULL
 );
 
 -- Tabla de publicaciones del blog
-CREATE TABLE Publicaciones (
+CREATE TABLE IF NOT EXISTS Publicaciones (
   id_publicacion INT PRIMARY KEY AUTO_INCREMENT,
   id_autor INT,
   titulo VARCHAR(255),
